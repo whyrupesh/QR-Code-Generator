@@ -90,8 +90,8 @@ export default function App() {
         {qrCode && (
           <div className="m-5">
             <h3>Generated QR Code:</h3>
-            <img src={qrCode} alt="QR Code" />
-            <div className="flex flex-row space-x-6 ml-5">
+            <img className="md:w-72" src={qrCode} alt="QR Code" />
+            <div className="flex flex-row space-x-6 ml-5 ">
               <button onClick={handleCopyToClipboard}>
                 <MdContentCopy size={25} />
               </button>
